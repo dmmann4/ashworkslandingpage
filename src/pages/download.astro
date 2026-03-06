@@ -1,0 +1,145 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Download - ${SITE_TITLE}`} description={`${SITE_DESCRIPTION} - Download our mobile app`} />
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background: #010058;
+				min-height: 100vh;
+			}
+			.hero {
+				background: #010058;
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				color: white;
+				padding: 2rem;
+			}
+			.download-container {
+				max-width: 800px;
+				margin: 0 auto;
+			}
+			.download-title {
+				font-size: 3.5rem;
+				font-weight: bold;
+				margin-bottom: 2rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+			}
+			.download-subtitle {
+				font-size: 1.5rem;
+				margin-bottom: 3rem;
+				opacity: 0.9;
+				line-height: 1.6;
+			}
+			.app-store-button {
+				display: inline-block;
+				background: #000;
+				color: white;
+				padding: 1.5rem 3rem;
+				border-radius: 15px;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 1.2rem;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				margin: 1rem;
+			}
+			.app-store-button:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+			}
+			.features-list {
+				text-align: left;
+				max-width: 600px;
+				margin: 3rem auto;
+				background: rgba(255, 255, 255, 0.1);
+				padding: 2rem;
+				border-radius: 15px;
+				backdrop-filter: blur(10px);
+			}
+			.features-list h3 {
+				color: white;
+				margin-bottom: 1rem;
+				font-size: 1.5rem;
+			}
+			.features-list ul {
+				color: white;
+				font-size: 1.1rem;
+				line-height: 1.8;
+			}
+			.features-list li {
+				margin-bottom: 0.5rem;
+			}
+			.qr-placeholder {
+				width: 200px;
+				height: 200px;
+				background: white;
+				border-radius: 15px;
+				margin: 2rem auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 3rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<div class="download-container">
+					<h1 class="download-title">Download AshWorks</h1>
+					<p class="download-subtitle">
+						AshWorks is the essential mobile app designed specifically for therapists. Streamline your practice, 
+						organize client information, and make your day easier with secure, HIPAA-compliant tools.
+					</p>
+					
+					<div class="qr-placeholder">
+						📱
+					</div>
+					
+					<div>
+						<a href="https://apps.apple.com/us/app/ashworks/id6759101627" 
+						   class="app-store-button" 
+						   target="_blank" 
+						   rel="noopener noreferrer">
+							🍎 Download on App Store
+						</a>
+					</div>
+					
+					<div class="features-list">
+						<h3>Why Therapists Choose AshWorks</h3>
+						<ul>
+							<li>� Track daily productivity with intuitive dashboards</li>
+							<li>� Quick access to clinical skills reference library</li>
+							<li>🏋️ Create and send exercise plans to patients</li>
+							<li>📱 Mobile access to all therapy tools</li>
+							<li>⏰ Save time with streamlined workflows</li>
+						</ul>
+					</div>
+					
+					<div>
+						<a href="https://apps.apple.com/us/app/ashworks/id6759101627" 
+						   class="app-store-button" 
+						   target="_blank" 
+						   rel="noopener noreferrer">
+							📱 Get Started Now
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
