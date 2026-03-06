@@ -1,0 +1,9 @@
+# app-ads.txt for AshWorks mobile app
+# Google AdMob publisher verification
+
+google.com, pub-7569941998196991, DIRECT, f08c47fec0942fa0
+
+# Additional publisher entries can be added here
+# Format: domain.com, publisher_id, relationship, certification
+# Relationship: DIRECT, RESELLER
+# Certification: f08c47fec0942fa0 (required for Google)

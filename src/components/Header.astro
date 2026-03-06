@@ -10,6 +10,7 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/download">Download</HeaderLink>
 			<HeaderLink href="/contact">Contact</HeaderLink>
+			<HeaderLink href="/privacy">Privacy</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://apps.apple.com/us/app/ashworks/id6759101627" target="_blank">
@@ -34,6 +35,7 @@ import { SITE_TITLE } from '../consts';
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+		color: #000;
 	}
 	nav {
 		display: flex;
@@ -42,13 +44,14 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		color: #000;
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
+		color: #000;
 	}
 	.social-links,
 	.social-links a {
